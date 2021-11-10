@@ -1,0 +1,93 @@
+.body {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(55, 73, 230);
+}
+
+.button {
+	max-width: max-content;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: white;
+	background-color: rgb(55, 73, 230);
+	border: 2px solid black;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+.search {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+.search-field {
+	background-color: lightgray;
+	height: 25px;
+}
+
+.update-button {
+	margin-bottom: 0px;
+}
+
+table {
+	width: 75%;
+}
+
+thead {
+	display: block;
+	border-bottom: 2px solid rgb(55, 73, 230);
+	margin-bottom: 5px;
+}
+
+tr {
+	display: flex;
+}
+
+tr:nth-child(even) {
+	background-color: lightgray;
+}
+
+th,
+td {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	height: 40px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+}
+
+.pagination-links {
+	display: flex;
+	list-style: none;
+}
+
+.pagination-links li {
+	padding: 5px 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border: 2px solid black;
+	border-radius: 10px;
+}

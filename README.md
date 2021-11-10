@@ -1,2 +1,2 @@
-# SQL Library Manager
- 
+# sql-library-manager
+SQL Library Manager
