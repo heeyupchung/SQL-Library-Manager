@@ -18,6 +18,7 @@ router.get("/", (req, res) => {
 	return res.redirect("/books");
 });
 
+/* GET books */
 router.get(
 	"/books",
 	asyncHandler(async (req, res) => {
@@ -38,6 +39,7 @@ router.get(
 	})
 );
 
+/* GET searched books */
 router.get(
 	"/books/search",
 	asyncHandler(async (req, res, next) => {
@@ -77,6 +79,7 @@ router.get(
 	})
 );
 
+/* GET new book */
 router.get(
 	"/books/new",
 	asyncHandler(async (req, res) => {
@@ -84,6 +87,7 @@ router.get(
 	})
 );
 
+/* POST new book */
 router.post(
 	"/books/new",
 	asyncHandler(async (req, res) => {
@@ -106,6 +110,7 @@ router.post(
 	})
 );
 
+/* GET specific book */
 router.get(
 	"/books/:id",
 	asyncHandler(async (req, res, next) => {
@@ -121,6 +126,7 @@ router.get(
 	})
 );
 
+/* POST specific book */
 router.post(
 	"/books/:id",
 	asyncHandler(async (req, res) => {
@@ -149,6 +155,7 @@ router.post(
 	})
 );
 
+/* Delete book */
 router.post(
 	"/books/:id/delete",
 	asyncHandler(async (req, res) => {
